@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DHOORA - Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    background:url("Images/bg_img.png") no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#1c7c54;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+a{
+    color:#1c7c54;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Welcome Back</h2>
+
+<input type="text" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+
+<button onclick="login()">Log In</button>
+
+<p>New user? <a href="signup.html">Sign Up</a></p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

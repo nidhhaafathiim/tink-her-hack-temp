@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Match-3 (8×8) — Beginner Friendly</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#ffffff">
+    <style>/* minimal fallback */</style>
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <h1>Match-3</h1>
+            <div class="hud">
+                <div class="hud-item">Score: <span id="score">0</span></div>
+                <div class="hud-item">Moves: <span id="moves">0</span></div>
+                <div class="hud-item">Level: <span id="level">1</span></div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="board-and-goal">
+                <div id="board" class="board" aria-label="Game board"></div>
+                <aside class="goals">
+                    <h2>Level Goal</h2>
+                    <div id="goalText">Reach <span id="goalScore">500</span> points in <span id="goalMoves">30</span> moves</div>
+                    <button id="restartBtn" class="btn">Restart Level</button>
+                </aside>
+            </section>
+
+            <section class="controls">
+                <div class="small">Tap & drag to swap tiles. Match 3+ to clear. 4 -> line power-up, 5 -> color bomb.</div>
+            </section>
+        </main>
+
+        <div id="overlay" class="overlay hidden">
+            <div class="modal">
+                <h3 id="overlayTitle">Level Complete</h3>
+                <p id="overlayMsg"></p>
+                <button id="nextBtn" class="btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

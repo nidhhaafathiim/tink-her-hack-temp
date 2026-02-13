@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DHOORA - SignUp</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("Images/bg_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 400px;
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1c7c54;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signup {
+    margin-top: 15px;
+}
+
+.signup a {
+    color: #1c7c54;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>Create Account</h2>
+
+    <div class="input-group">
+        <input type="text" id="signupName" placeholder="Full Name">
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="signupEmail" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="signupPassword" placeholder="Password">
+    </div>
+
+    <button class="login-btn" onclick="signup()">Sign Up</button>
+
+    <div class="signup">
+        Already have account? <a href="login.html">Login</a>
+    </div>
+</div>
+
+<!-- LINK JS FILE -->
+<script src="auth.js"></script>
+
+</body>
+</html>
