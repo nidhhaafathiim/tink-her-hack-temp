@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DHOORA - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+}
+
+/* NAVBAR */
+nav{
+    background:#1c7c54;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:url("Images/bg_img.png") no-repeat center center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.search-box{
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    display:flex;
+}
+
+.search-box input{
+    padding:10px;
+    border:none;
+    outline:none;
+    width:250px;
+}
+
+.search-box button{
+    padding:10px 20px;
+    background:#1c7c54;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DHOORA</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="login.html">Login</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Plan Smarter. Travel Safer.</h1>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Destination...">
+        <button id="searchBtn">Search</button>
+    </div>
+</div>
+
+<!-- LINK JS FILE -->
+<script src="JS/home.js"></script>
+
+</body>
+</html>

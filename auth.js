@@ -46,7 +46,7 @@ function login() {
 
     if(email === storedUser.email && password === storedUser.password){
         alert("Login successful 🚀");
-        window.location.href = "index.html";
+        window.location.href = "body.html";
     } else {
         alert("Invalid email or password");
     }
