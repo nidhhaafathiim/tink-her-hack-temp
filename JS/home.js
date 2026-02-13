@@ -1,15 +1,12 @@
-// Search Button Logic
-document.getElementById("searchBtn").addEventListener("click", function() {
+function searchDestination() {
+    let destination = document.getElementById("searchInput").value;
 
-    let destination = document.getElementById("searchInput").value.trim();
-
-    if(destination === ""){
+    if(destination === "") {
         alert("Please enter a destination!");
-        return;
+    } else {
+        alert("Searching for " + destination + "...");
+        
+        // Example redirect (later you can connect to real search page)
+        // window.location.href = "destinations.html";
     }
-
-    alert("Searching for: " + destination + " 🌍");
-
-    // Future upgrade:
-    // window.location.href = "destination.html?place=" + destination;
-});
+}

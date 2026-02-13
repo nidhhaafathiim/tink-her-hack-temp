@@ -5,97 +5,108 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DHOORA - Home</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:#f4f6f8;
-}
-
-/* NAVBAR */
-nav{
-    background:#1c7c54;
-    color:white;
-    padding:15px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-/* HERO */
-.hero{
-    height:90vh;
-    background:url("Images/bg_img.png") no-repeat center center/cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:50px;
-    margin-bottom:15px;
-}
-
-.search-box{
-    background:white;
-    padding:10px;
-    border-radius:8px;
-    display:flex;
-}
-
-.search-box input{
-    padding:10px;
-    border:none;
-    outline:none;
-    width:250px;
-}
-
-.search-box button{
-    padding:10px 20px;
-    background:#1c7c54;
-    color:white;
-    border:none;
-    cursor:pointer;
-}
-</style>
+<link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <h2>DHOORA</h2>
     <div>
         <a href="#">Home</a>
+        <a href="#">Destinations</a>
         <a href="#">Blog</a>
         <a href="login.html">Login</a>
     </div>
 </nav>
 
-<div class="hero">
+<!-- HERO -->
+<section class="hero">
     <h1>Plan Smarter. Travel Safer.</h1>
+    <p>Your Complete Travel Companion</p>
 
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="Search Destination...">
-        <button id="searchBtn">Search</button>
+        <button onclick="searchDestination()">Search</button>
     </div>
-</div>
+</section>
 
-<!-- LINK JS FILE -->
+<!-- FEATURES -->
+<section class="section">
+    <h2>Explore With DHOORA</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Transport</h3>
+            <p>Find buses, trains, taxis and more easily.</p>
+        </div>
+
+        <div class="card">
+            <h3>Hotels & Resorts</h3>
+            <p>Book the best stays at affordable prices.</p>
+        </div>
+
+        <div class="card">
+            <h3>Food & Restaurants</h3>
+            <p>Discover local food and popular street spots.</p>
+        </div>
+
+        <div class="card">
+            <h3>Safety Support</h3>
+            <p>Emergency contacts & nearby police help.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-section">
+            <h2>DHOORA</h2>
+            <p>Your complete travel companion. Plan smarter, travel safer, and explore better with DHOORA.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@dhoora.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Kerala, India</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 DHOORA Travel | All Rights Reserved
+    </div>
+</footer>
+
+
+
 <script src="JS/home.js"></script>
-
 </body>
 </html>
