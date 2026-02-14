@@ -1,28 +1,29 @@
 <p align="center">
-  <img src="./img.png" alt="Project Banner" width="100%">
+  <img <img width="959" height="434" alt="Screenshot1" src="https://github.com/user-attachments/assets/4efe8f50-707d-4599-9b4e-a7a55182ead1" />
+src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [Dhoora] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [June]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [jumana hasin] - [majlis arts and science College autonomous]
+- Member 2: [Nidha fathim] - [majlis arts and science College autonomous]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://nidhhaafathiim.github.io/tink-her-hack-temp/]
 
 ### Project Description
-[2-3 lines about what your project does]
+[end to end travel app]
 
 ### The Problem statement
-[What problem are you solving?]
+[We are solving cocerns of a person who faces while travelling]
 
 ### The Solution
-[How are you solving it?]
+[we made it in digital solution]
 
 ---
 
@@ -83,13 +84,16 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![<img width="959" height="434" alt="Screenshot1" src="https://github.com/user-attachments/assets/b04a2f98-f603-41bc-abb7-0f541c1bcf1b" />
+](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![<img width="1919" height="863" alt="Screenshot 2026-02-14 084436" src="https://github.com/user-attachments/assets/86ba2f7c-f620-49f8-8ab2-065bb95dff51" />
+](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![<img width="958" height="437" alt="Screenshot 2026-02-14 084618" src="https://github.com/user-attachments/assets/b6bb3496-4264-49c6-8a4a-d957cf3e7800" />
+](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
 #### Diagrams
