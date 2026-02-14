@@ -9,4 +9,8 @@ function searchDestination() {
         // Example redirect (later you can connect to real search page)
         // window.location.href = "destinations.html";
     }
+    function planTrip(){
+    alert("Smart Trip Planner Coming Soon 🚀");
+}
+
 }

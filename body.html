@@ -6,6 +6,9 @@
 <title>DHOORA - Home</title>
 
 <link rel="stylesheet" href="CSS/home.css">
+<link rel="stylesheet" href="CSS/ailogic.css">
+<script src="JS/ailogic.js"></script>
+
 </head>
 
 <body>
@@ -17,19 +20,27 @@
         <a href="#">Home</a>
         <a href="#">Destinations</a>
         <a href="#">Blog</a>
+        <a href="#">Local guide</a>
         <a href="login.html">Login</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Plan Smarter. Travel Safer.</h1>
-    <p>Your Complete Travel Companion</p>
+    <h1>Plan Smarter. Travel Safer!</h1>
+    <p>Get your seamless journey</p>
 
     <div class="search-box">
+
+    <div class="input-wrapper">
+        <span class="location-icon">📍</span>
         <input type="text" id="searchInput" placeholder="Search Destination...">
-        <button onclick="searchDestination()">Search</button>
     </div>
+
+    <button onclick="searchDestination()">Search</button>
+
+</div>
+
 </section>
 
 <!-- FEATURES -->
@@ -58,6 +69,43 @@
         </div>
     </div>
 </section>
+<section class="sudden-trip">
+
+     <!-- <div class="trip-image">
+        <img src="Images/trip_mockup.png" alt="Trip App Preview">
+    </div> -->
+      <div class="trip-content1">
+        <h2>Safety First<br>Travel worry-free with our safety features.</h2>
+        <p>Get the best travel suggestions & bookings in minutes.</p>
+        <button onclick="planTrip()">Plan a Trip</button>
+    </div>
+
+    <div class="trip-content">
+        <h2>Plan a Sudden Trip?<br>We've got you!</h2>
+        <p class="trip-content-p">Your trip, Ready in minutes.</p>
+        <button onclick="planTrip()">Plan a Trip</button>
+    </div>
+
+   
+</section>
+<!-- DHOORA AI CHAT BUTTON -->
+<div id="chatToggle" class="chat-toggle">🤖</div>
+
+<!-- CHAT BOX -->
+<div id="chatBox" class="chat-box">
+    <div class="chat-header">
+        DHOORA AI 🌍
+        <span id="closeChat">✖</span>
+    </div>
+
+    <div id="chatMessages" class="chat-messages"></div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask me about your trip...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -106,7 +154,27 @@
 </footer>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
 
-<script src="JS/home.js"></script>
+    const chatToggle = document.getElementById("chatToggle");
+    const chatBox = document.getElementById("chatBox");
+    const closeChat = document.getElementById("closeChat");
+
+    if(chatToggle){
+        chatToggle.addEventListener("click", function(){
+            chatBox.style.display = "flex";
+        });
+    }
+
+    if(closeChat){
+        closeChat.addEventListener("click", function(){
+            chatBox.style.display = "none";
+        });
+    }
+
+});
+
+</script>
 </body>
 </html>
