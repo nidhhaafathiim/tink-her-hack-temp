@@ -71,5 +71,5 @@ function generateAIResponse(input){
         return "Awesome 🔥 Based on your budget, I can arrange travel, stay and food. How many days are you planning?";
     }
 
-    return "I'm here to help you plan your trip 😊 Tell me your destination, budget and number of days.";
+    return "signup.html";
 }
